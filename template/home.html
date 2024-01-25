@@ -1,1 +1,10 @@
-vdsgdfsgv
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h1>Home</h1>
+    <div>
+        {% for i in prod %}
+        {{i.id}}
+        {% endfor %}
+    </div>
+{% endblock %}
